@@ -23,7 +23,13 @@ public class Main {
         n1.addProducto(viakal);
         n1.addProducto(lejiaConejo);
         n1.addProducto(lejiaConejo);
-        n1.addProducto(lejiaConejo);
+        n1.addProducto(sanitol);
+        n1.addProducto(mistol);
+        n1.addProducto(mistol);
+        n1.addProducto(K9);
+        n1.addProducto(vitroclean);
+        n1.addProducto(vitroclean);
+        n1.addProducto(vitroclean);
 
 
         // Se aplica el método showTicket para imprimir el ticket final

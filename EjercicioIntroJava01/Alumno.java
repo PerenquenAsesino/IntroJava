@@ -30,14 +30,12 @@ class Alumno {
         this.apellidos = apellidos;
     }
 
-    public List<Asignatura> getAsignaturas() {
-        return asignaturas;
-    }
-
+    // Método para guardar asignaturas con sus datos en el ArrayList
     public void agregarAsignatura(Asignatura asignatura) {
         asignaturas.add(asignatura);
     }
 
+    // Método para calcular la nota media de las asignaturas almacenadas
     public double calcularNotaMedia() {
         if (asignaturas.isEmpty()) {
             return 0.0;
@@ -50,6 +48,7 @@ class Alumno {
         return sumaNotas / asignaturas.size();
     }
 
+    // Método para imprimir el nombre y la nota de las asignaturas almacenadas en el ArrayList
     public void informarAsignaturas() {
         System.out.println("------------------------");
         for (Asignatura asignatura : asignaturas) {
@@ -57,6 +56,7 @@ class Alumno {
         }
     }
 
+    // Método para imprimir el boletín, con todos los datos sobre el alumno y sus asignaturas
     public void mostrarBoletin() {
         System.out.println("\nBoletín de notas de " + nombre + " " + apellidos);
         informarAsignaturas();
